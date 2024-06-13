@@ -12,7 +12,7 @@ services:
       database__client: mysql
       database__connection__host: db
       database__connection__user: root
-      database__connection__password: Donkeydick32#@
+      database__connection__password: generate-here
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://subsite.site.com
