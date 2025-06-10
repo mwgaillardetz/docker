@@ -1,0 +1,21 @@
+services:
+  overseerr:
+    image: lscr.io/linuxserver/overseerr:latest
+    container_name: overseerr
+    environment:
+      - TZ=America/New_York
+    volumes:
+      - overseerr:/config
+    ports:
+      - 5055:5055
+    restart: unless-stopped
+    networks:
+      - robo54
+
+volumes:
+  overseerr:
+    external: true
+
+networks:
+  robo54:
+    external: true

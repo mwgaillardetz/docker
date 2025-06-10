@@ -23,4 +23,4 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: update123
+      MYSQL_ROOT_PASSWORD: ""

@@ -1,0 +1,10 @@
+services:
+  deemix:
+    container_name: Deemix
+    image: ghcr.io/bambanah/deemix:latest
+    restart: unless-stopped
+    volumes:
+      - /m/Music:/downloads
+      - ./config:/config
+    ports:
+      - "6596:6595"
